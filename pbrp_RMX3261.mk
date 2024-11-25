@@ -7,6 +7,9 @@ $(call inherit-product, device/realme/device.mk) -- path to main device makefile
 
 # Inherit common product files.
 $(call inherit-product, vendor/pb/config/common.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := RMX3261
