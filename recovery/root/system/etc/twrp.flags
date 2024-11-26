@@ -13,6 +13,8 @@
 /metadata              ext4     /dev/block/by-name/metadata              flags=display=metadata;backup=1
 /data                  f2fs     /dev/block/by-name/userdata              flags=display=data;backup=1
 
+#FLASHABLE
+/system_image          emmc      /dev/block/mapper/system_a              flags=display="System_a";backup=1;flashimg=1
 
 #SD cards
 /external_sd	vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0	flags=display="MicroSD Card";storage;wipeingui;removable
